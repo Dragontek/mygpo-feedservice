@@ -55,7 +55,7 @@ STATICFILES_DIRS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = os.getenv('MYGPOFS_SECRET_KEY', '')
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', '')
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
