@@ -92,7 +92,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 BASE_URL='http://localhost:8080/'
 
-import dj_database_url
+from . import database
 DATABASES = {'default': database.config() }
 
 SOUNDCLOUD_CONSUMER_KEY = os.getenv('MYGPOFS_SOUNDCLOUD_CONSUMER_KEY', '')
